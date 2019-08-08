@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrackerComponent } from './components/tracker/tracker.component';
+import { GetLocationService } from './get-location.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { TrackerComponent } from './components/tracker/tracker.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GetLocationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

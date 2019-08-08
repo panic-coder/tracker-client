@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-// import { PusherService } from './pusher.service';
-
+import { GetLocationService } from './get-location.service';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
-  // title = 'Pusher Liker';
-  likes: any =  10;
-  constructor() {
+  constructor(private getLocationService: GetLocationService) {
   }
-  // ngOnInit() {
-  //   this.pusherService.channel.bind('new-like', data => {
-  //     this.likes = data.likes ;
-  //   });
-  // }
 }

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PusherService } from './pusher.service';
+import { GetLocationService } from './get-location.service';
 
-describe('PusherService', () => {
+describe('GetLocationService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: PusherService = TestBed.get(PusherService);
+    const service: GetLocationService = TestBed.get(GetLocationService);
     expect(service).toBeTruthy();
   });
 });
