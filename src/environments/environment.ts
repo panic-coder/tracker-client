@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  baseUrl: 'http://localhost:3000/',
   // pusher: {
   //   key: 'cc5edb8f4515e7c358d8',
   //   cluster: 'ap2',

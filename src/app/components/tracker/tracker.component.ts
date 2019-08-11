@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { } from 'googlemaps';
 import { GetLocationService } from 'src/app/get-location.service';
-
+// import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 
 @Component({
   selector: 'app-tracker',
@@ -18,8 +18,10 @@ export class TrackerComponent implements OnInit {
   logitude: 73.005094;
   mapType = 'roadmap'
   // latitude: 19.086594299999998, longitude: 73.005094 
-  constructor(private getLocation: GetLocationService) {
-    this.userType = localStorage.getItem('user_type');
+  constructor(private getLocation: GetLocationService,
+    //  private spinnerService: Ng4LoadingSpinnerService
+     ) {
+    this.userType = localStorage.getItem('userType');
     // console.log(this.userType);
   }
 

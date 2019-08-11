@@ -1,7 +1,9 @@
+<ng4-loading-spinner [threshold]="2" [timeout]="400000"> </ng4-loading-spinner>
 <div class="login-div" fxLayout="row" fxLayoutAlign="center center" style="height: 100vh;">
   <mat-card class="login-card" fxFlex="30" fxFlex.xs="70">
     <div fxLayout="column" fxLayoutAlign="center center">
-      <div style="font-weight: 600;font-size: 25px; text-align: center;padding-top: 20px;padding-bottom: 20px">Tracker Login</div>
+      <div style="font-weight: 600;font-size: 25px; text-align: center;padding-top: 20px;padding-bottom: 20px">Tracker
+        Login</div>
       <!-- <div class="avatar-div" fxLayoutAlign="center center">
         <img class="avatar" src="../../../assets/XMLID_1201_.svg" alt="">
       </div> -->
@@ -23,8 +25,7 @@
         </mat-form-field>
       </div>
       <div class="button-div">
-        <button mat-button class="login-button" [disabled]="email.invalid  || password.invalid"
-          (click)="login()">Login</button>
+        <button mat-button (click)="login()">Login</button>
         <!-- <button mat-button>Register</button> -->
       </div>
       <!-- <button mat-button>Twitter Login</button> -->
